@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import "tailwindcss";
+
+/* || RESET */
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+/* || VARIABLES */
+:root {
+    /* FONTS */
+    --FF: "Nunito", sans-serif;
+    --FS: clamp(1rem, 2.2vh, 1.5rem)
+
+    /* COLORS */
+    --BGCOLOR-FADE: rgb(252, 220, 160);
+    --BGCOLOR: orange;
+    --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
+    --HEADERCOLOR: hsl(206, 100%, 22%);
+    --FONT-COLOR: black;
+    --FONT-COLOR-DARK: white;
+
+    /* PADDING */
+    --SMALL-PADDING: 0 1rem 0 0.25rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+    --BGCOLOR-FADE: gray;
+    }
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.center {
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: var(--FS);
+    font-family: var(--FF);
+    background-color: var(--BGCOLOR);
+    background-image: var(--BGIMAGE);
+}
+
+body {
+    background-color: var(--BODY-BGCOLOR);
+    color: var(--FONT-COLOR);
+    min-height: 100vh;
+    margin: 0 auto;
+    border-left: var(--BORDERS);
+    border-right: var(--BORDERS);
+    box-shadow: 0 0 10px var(--BORDER-COLOR);
+}
