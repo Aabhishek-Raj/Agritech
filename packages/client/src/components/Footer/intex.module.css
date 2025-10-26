@@ -1,0 +1,6 @@
+.footer {
+    display: grid;
+    place-content: center;
+    color: var(--FONT-COLOR-DARK);
+    background-color: var(--HEADERCOLOR);
+}
