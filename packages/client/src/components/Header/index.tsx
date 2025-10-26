@@ -18,18 +18,11 @@ const Header = (props: Props) => {
           </figure>
           <h1 className={clsx(styles.header__h1)}>AgriTrade</h1>
         </Link>
-        <button
-          onClick={() => setIsSmallScreen(!isSmallScreen)}
-          className={clsx(styles.header__button)}
-        >
+        <button onClick={() => setIsSmallScreen(!isSmallScreen)} className={clsx(styles.header__button)}>
           {!isSmallScreen ? '☰' : 'X'}
         </button>
       </section>
-      <ul
-        className={clsx(
-          !isSmallScreen ? styles.header__ul : styles.header__ul_small
-        )}
-      >
+      <ul className={clsx(!isSmallScreen ? styles.header__ul : styles.header__ul_small)}>
         <li>
           <Link to="/products">Products</Link>
         </li>

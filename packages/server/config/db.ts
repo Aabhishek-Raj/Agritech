@@ -1,10 +1,9 @@
 import mongoose from 'mongoose'
 
 export const connectDB = async () => {
+  const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/test'
   try {
-    const conn = await mongoose.connect(
-      'mongodb+srv://rsabhishek77:vjKFhP3ExLsSBmoH@cluster0.vm9bcwk.mongodb.net/agriDB?retryWrites=true&w=majority&appName=Cluster0'
-    )
+    const conn = await mongoose.connect(MONGO_URI)
     console.log(`MongoDB connected ${conn.connection.port}`)
   } catch (err) {
     console.log('DB connection failed', err)

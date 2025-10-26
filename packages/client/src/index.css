@@ -26,8 +26,7 @@ textarea {
 :root {
   /* FONTS */
   --FF: 'Nunito', sans-serif;
-  --FS: clamp(1rem, 2.2vh, 1.5rem) /* COLORS */
-    --BGCOLOR-FADE: rgb(252, 220, 160);
+  --FS: clamp(1rem, 2.2vh, 1.5rem) /* COLORS */ --BGCOLOR-FADE: rgb(252, 220, 160);
   --BGCOLOR: orange;
   --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
   --HEADERCOLOR: hsl(206, 100%, 22%);

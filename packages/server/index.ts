@@ -2,11 +2,14 @@ import express from 'express'
 import type { Request, Response } from 'express'
 import helmet from 'helmet'
 import cors from 'cors'
+import dotenv from 'dotenv'
 import userRoutes from './routes/user.route'
 import { connectDB } from './config/db'
+import errorHandler from './middleware/errorHandler'
 
 const app = express()
-const port = 3000
+dotenv.config()
+const PORT = process.env.PORT || 5000
 
 app.use(
   helmet({
@@ -24,7 +27,9 @@ app.get('/', (req: Request, res: Response) => {
   res.send('Hello, TypeScript with Express!')
 })
 
-app.listen(port, () => {
+app.use(errorHandler)
+
+app.listen(PORT, () => {
   connectDB()
-  console.log(`Server is running on port ${port}`)
+  console.log(`Server is running on port ${PORT}`)
 })
