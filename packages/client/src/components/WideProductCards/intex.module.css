@@ -1,18 +1,18 @@
 .section {
-    background-color: papayawhip;
-    padding: 1rem 0;
-    margin: 1rem 0;
+  background-color: papayawhip;
+  padding: 1rem 0;
+  margin: 1rem 0;
 }
 
 .section__h1 {
- padding-bottom: 1rem;
- font-weight: 700;
- font-size: var(--FS);
+  padding-bottom: 1rem;
+  font-weight: 700;
+  font-size: var(--FS);
 }
 
 .section__div {
-    display: flex;
-    flex-flow: row nowrap;
-    overflow-x: scroll;
-    scrollbar-width: none;
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: scroll;
+  scrollbar-width: none;
 }

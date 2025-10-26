@@ -1,6 +1,6 @@
-import clsx from "clsx"
+import clsx from 'clsx'
 import style from './intex.module.css'
-import CategoryCard from "./CategoryCard/intex"
+import CategoryCard from './CategoryCard/intex'
 
 const CategoryNav = () => {
   return (

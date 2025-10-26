@@ -1,9 +1,9 @@
-import CategoryNav from "../../components/CategoryNav"
-import WideProductCards from "../../components/WideProductCards/intex"
+import CategoryNav from '../../components/CategoryNav'
+import WideProductCards from '../../components/WideProductCards/intex'
 
 const Home = () => {
   return (
-     <main>
+    <main>
       <CategoryNav />
       <WideProductCards />
       <WideProductCards />

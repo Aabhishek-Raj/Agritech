@@ -1,0 +1,59 @@
+# 🔧 Dependency directories
+node_modules
+bun_modules
+
+# 🔒 Bun & package lockfiles
+bun.lock
+bun.lockb
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ⚙️ Build / dist outputs
+dist
+build
+.out
+.next
+coverage
+.cache
+output
+temp
+tmp
+
+# 🧩 Logs & environment files
+*.log
+*.env
+*.env.local
+*.env.production
+*.env.development
+
+# 🧱 IDE / Editor junk
+.vscode
+.idea
+
+# 🧪 Test & artifact directories
+__tests__
+__mocks__
+*.snap
+
+# 🪶 Static / compiled assets
+public
+static
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
+*.mp4
+*.webm
+
+# 📘 Documentation artifacts
+*.md
+*.mdx
+CHANGELOG*
+README.md
+
+# 🚀 Misc generated files
+.DS_Store
+Thumbs.db

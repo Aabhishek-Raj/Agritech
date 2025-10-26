@@ -1,18 +1,18 @@
 .section {
-    max-width: 70px;
-    padding: 0 0.5rem;
+  max-width: 70px;
+  padding: 0 0.5rem;
 }
 
 .section__fig {
-    border-radius: 50px;
+  border-radius: 50px;
 }
 
 .section__fig img {
-    border-radius: 50px;
+  border-radius: 50px;
 }
 
 .section__p {
-    font-size: 0.75rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  font-size: 0.75rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
