@@ -1,0 +1,37 @@
+.section {
+  padding: 0 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 500px;
+}
+
+.section__fig img {
+  border-radius: 12px;
+  margin: 2rem;
+  width: 400px;
+}
+
+.section__actions {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+  width: 100%;
+}
+.section__button {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+.button__cart {
+  background-color: #eee;
+  color: #333;
+}
+
+.button__buy {
+  background-color: #007bff;
+  color: #fff;
+}

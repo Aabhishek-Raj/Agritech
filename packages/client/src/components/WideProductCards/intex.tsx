@@ -1,19 +1,31 @@
 import clsx from 'clsx'
 import styles from './intex.module.css'
 import WideProductCard from './WideProductCard/intex'
+import { Link } from 'react-router-dom'
 
 const WideProductCards = () => {
   return (
     <section className={clsx(styles.section)}>
       <h1 className={clsx(styles.section__h1)}>Best of Electonics</h1>
       <div className={clsx(styles.section__div)}>
-        <WideProductCard />
-        <WideProductCard />
-        <WideProductCard />
-        <WideProductCard />
-        <WideProductCard />
-        <WideProductCard />
-        <WideProductCard />
+        <Link to={'/product'}>
+          <WideProductCard />
+        </Link>
+        <Link to={'/product'}>
+          <WideProductCard />
+        </Link>
+        <Link to={'/product'}>
+          <WideProductCard />
+        </Link>
+        <Link to={'/product'}>
+          <WideProductCard />
+        </Link>
+        <Link to={'/product'}>
+          <WideProductCard />
+        </Link>
+        <Link to={'/product'}>
+          <WideProductCard />
+        </Link>
       </div>
     </section>
   )

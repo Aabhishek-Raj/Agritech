@@ -5,29 +5,21 @@ interface CustomError extends Error {
   statusCode?: number
 }
 
-const errorHandler = (
-  err: CustomError, // Type the error better
-  req: Request,
-  res: Response,
-  next: NextFunction
-) => {
-  // 1. Determine Status Code: Use the error's code or default to 500
+const errorHandler = (err: CustomError, req: Request, res: Response, next: NextFunction) => {
   const statusCode = err.statusCode || 500
 
-  // 2. Log the Error (critical for debugging)
+  // For debugging
   console.error(`❌ [${statusCode}] Error:`, err.message)
   if (statusCode === 500) {
-    console.error(err.stack) // Log stack trace for true server errors
+    console.error(err.stack)
   }
 
   // 3. Send Response using your ApiResponse structure
   res.status(statusCode).json({
-    success: false, // Always false for an error response
-    data: null, // Data is null on error
+    success: false,
+    data: null,
     message: err.message || 'An unexpected server error occurred.',
   })
-
-  // Note: Do not call next() here unless you have another error handler to run.
 }
 
 export default errorHandler

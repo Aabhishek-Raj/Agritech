@@ -5,6 +5,8 @@ import SellerHome from './pages/sellerHome'
 import Dashboard from './pages/dashboard'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Product from './pages/product'
+import Checkout from './pages/checkout'
 
 const App = () => {
   const Layout = () => (
@@ -20,6 +22,8 @@ const App = () => {
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/checkout" element={<Checkout />} />
 
         <Route path="/seller">
           <Route path="" element={<SellerHome />} />
