@@ -1,7 +1,7 @@
 import type { Request, Response } from 'express'
 import { userService } from '../service/user.service'
 import asyncHandler from '../middleware/asyncHandler'
-import { ApiResponse } from '../utils/apiResponse'
+import { ApiResponse } from '../utils/ApiResponse'
 
 /**
  * Controller function to create a user.
