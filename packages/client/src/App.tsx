@@ -7,6 +7,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Product from './pages/product'
 import Checkout from './pages/checkout'
+import Cart from './pages/cart'
 
 const App = () => {
   const Layout = () => (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/products" element={<Products />} />
         <Route path="/product" element={<Product />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/cart" element={<Cart />} />
 
         <Route path="/seller">
           <Route path="" element={<SellerHome />} />
