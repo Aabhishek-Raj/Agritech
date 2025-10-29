@@ -1,0 +1,10 @@
+.section {
+  padding: 0 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.section__fig {
+  max-width: 200px;
+}
