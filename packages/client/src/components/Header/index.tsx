@@ -3,9 +3,7 @@ import styles from './index.module.css'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
-type Props = {}
-
-const Header = (props: Props) => {
+const Header = () => {
   const [isSmallScreen, setIsSmallScreen] = useState<boolean>(false)
 
   return (

@@ -1,10 +1,9 @@
 import Style from './index.module.css'
 import ProfileCard from '../../components/ProfileCard'
 import profileImg from '../../assets/img/profile-800x800.png'
-import { useState } from 'react'
 
 const Products = () => {
-  const [data, setData] = useState([
+  const data = [
     {
       id: 'profile1',
       name: 'Joe coder',
@@ -23,7 +22,7 @@ const Products = () => {
       img: profileImg,
       quote: 'I test stuff',
     },
-  ])
+  ]
 
   return (
     <div className={Style.container}>
