@@ -21,8 +21,8 @@
 }
 
 .header__fig {
-  max-width: 70px;
-  min-width: 60px;
+  max-width: 45px;
+  min-width: 35px;
   display: flex;
   flex-flow: row;
 }

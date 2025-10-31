@@ -1,0 +1,13 @@
+.section {
+  background-color: aliceblue;
+  padding-inline: 2rem;
+  padding-bottom: 2rem;
+  margin: 1.5rem;
+  border-radius: var(--BR);
+}
+
+.section__head {
+  font-size: var(--FS);
+  padding-left: var(--PADDING-SIDE);
+  padding: 1rem;
+}

@@ -3,14 +3,15 @@ import styles from './index.module.css'
 
 interface ButtonProps {
   className: string
-  loading: boolean
+  loading?: boolean
+  text?: string
 }
 
 const Button = (props: ButtonProps) => {
-  const { className, loading } = props
+  const { className, loading = false, text = 'Submit' } = props
   return (
     <button type="submit" className={clsx(styles.button, className)} disabled={loading} aria-busy={loading}>
-      {loading ? 'Saving…' : 'Submit'}
+      {loading ? 'Saving…' : text}
     </button>
   )
 }

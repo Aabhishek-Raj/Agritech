@@ -34,7 +34,7 @@ const Input: React.FC<InputProps> = ({
   return (
     <div className={clsx(styles.inputWrapper, className)}>
       {label && (
-        <label htmlFor={inputId} className={clsx(styles.label)}>
+        <label htmlFor={inputId} className={styles.label}>
           {label}
         </label>
       )}
@@ -53,7 +53,7 @@ const Input: React.FC<InputProps> = ({
       />
 
       {hasError && (
-        <p id={`${inputId}-error`} className={clsx(styles.errorMessage)} role="alert">
+        <p id={`${inputId}-error`} className={styles.errorMessage} role="alert">
           {errorMessage}
         </p>
       )}

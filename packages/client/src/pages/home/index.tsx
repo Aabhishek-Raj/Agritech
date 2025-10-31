@@ -3,12 +3,12 @@ import WideProductCards from '../../components/WideProductCards/intex'
 
 const Home = () => {
   return (
-    <main>
+    <div>
       <CategoryNav />
       <WideProductCards />
       <WideProductCards />
       <WideProductCards />
-    </main>
+    </div>
   )
 }
 

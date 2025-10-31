@@ -13,7 +13,9 @@ const App = () => {
   const Layout = () => (
     <>
       <Header />
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
       <Footer />
     </>
   )

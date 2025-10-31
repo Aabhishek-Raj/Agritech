@@ -34,11 +34,11 @@ const Products = () => {
           <a href="#profile3">Jane</a>
         </nav>
       </header>
-      <main>
+      <div>
         {data.map((user) => (
           <ProfileCard key={user.id} user={user} />
         ))}
-      </main>
+      </div>
       <div className={Style.element}>
         <div className={Style.colorDiv}></div>
         <label htmlFor="color">type the color</label>

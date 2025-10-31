@@ -7,14 +7,14 @@ const Header = () => {
   const [isSmallScreen, setIsSmallScreen] = useState<boolean>(false)
 
   return (
-    <header className={clsx(styles.header)}>
-      <section className={clsx(styles.header__section)}>
-        <Link to={'/'} className={clsx(styles.header__link)}>
-          <figure className={clsx(styles.header__fig)}>
-            <img src="/agritrade.svg" alt="logo" />
+    <header className={styles.header}>
+      <section className={styles.header__section}>
+        <Link to={'/'} className={styles.header__link}>
+          <figure className={styles.header__fig}>
+            <img src="/rice.png" alt="logo" />
             <figcaption className="offscreen">AgriTrade</figcaption>
           </figure>
-          <h1 className={clsx(styles.header__h1)}>AgriTrade</h1>
+          <h1 className={styles.header__h1}>AgriTrade</h1>
         </Link>
         <button onClick={() => setIsSmallScreen(!isSmallScreen)} className={clsx(styles.header__button)}>
           {!isSmallScreen ? '☰' : 'X'}

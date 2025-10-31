@@ -1,10 +1,9 @@
-import clsx from 'clsx'
 import style from './intex.module.css'
 import CategoryCard from './CategoryCard/intex'
 
 const CategoryNav = () => {
   return (
-    <main className={clsx(style.main)}>
+    <main className={style.main}>
       <CategoryCard />
       <CategoryCard />
       <CategoryCard />

@@ -26,15 +26,24 @@ textarea {
 :root {
   /* FONTS */
   --FF: 'Nunito', sans-serif;
-  --FS: clamp(1rem, 2.2vh, 1.5rem) /* COLORS */ --BGCOLOR-FADE: rgb(252, 220, 160);
+  --FF-HEADINGS: 'Fugaz One', cursive;
+  --FS: clamp(1rem, 2.2vh, 1.5rem);
+  /* COLORS */
+  --BGCOLOR-FADE: rgb(252, 220, 160);
   --BGCOLOR: orange;
+  --BTNCOLOR: #fb641b;
   --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
   --HEADERCOLOR: hsl(206, 100%, 22%);
   --FONT-COLOR: black;
   --FONT-COLOR-DARK: white;
 
   /* PADDING */
+  --PADDING-SIDE: 3rem;
+  --PADDING-TB: 1.5rem;
   --SMALL-PADDING: 0 1rem 0 0.25rem;
+
+  /* BORDER RADIUS */
+  --BR: 6px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -73,4 +82,20 @@ body {
   border-left: var(--BORDERS);
   border-right: var(--BORDERS);
   box-shadow: 0 0 10px var(--BORDER-COLOR);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--FF-HEADINGS);
+}
+
+main {
+  flex: 1;
 }
